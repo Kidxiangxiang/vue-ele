@@ -4,7 +4,9 @@
 			<li class="theList">
 				<div class="clearFloat">
 					<div class="shopLogo">
+						<span class="number">4</span>
 						<img src="//fuss10.elemecdn.com/f/8a/0853cc739311f4c16c4a96e73b06cpng.png?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/" alt="咬不得高祖生煎（体育店）" />
+						<span content="10:30配送" class="hint"></span>
 					</div>
 					<div class="introduce clearFloat">
 						<div class="line-one">
@@ -56,6 +58,7 @@ import ratingStar from './ratingStar'
 
 <style lang="stylus" scoped>
 	$grey = #666
+	$line = #dddddd
 
 	.shopList
 		width 100%
@@ -70,10 +73,43 @@ import ratingStar from './ratingStar'
 				height 1.3rem
 				width 1.3rem
 				float left
+				position relative
+				
+				.number 
+					position absolute
+					top -.2rem
+					right -.1rem
+					height .35rem
+					min-width .3rem
+					line-height .35rem
+					padding .02rem .05rem 0 .05rem
+					text-align center
+					font-size .1rem
+					color #ffffff
+					background-color #FF4B15
+					border-radius .2rem
+					z-index 11
 
 				img 
 					height 100%
 					width 100%
+
+				.hint
+					font-size .01rem
+					text-align center
+					
+					&:after
+						position absolute
+						left -.2rem
+						bottom 0
+						content attr(content)
+						width 1.3rem
+						margin-left .2rem
+						height .3rem
+						line-height .3rem
+						background-color #54CE75
+						color #fff
+
 
 			.introduce
 				float left  
@@ -168,6 +204,8 @@ import ratingStar from './ratingStar'
 					font-size .1rem
 					color $grey
 					margin-top .25rem
+					padding-bottom .15rem
+					border-bottom 1px dashed  $line
 
 					.money
 						float left
@@ -175,7 +213,7 @@ import ratingStar from './ratingStar'
 						span 
 
 							&:first-child
-								border-right 1px solid #ddd
+								border-right 1px solid $line
 								padding-right .1rem
 								margin-right .05rem
 
@@ -185,7 +223,7 @@ import ratingStar from './ratingStar'
 
 						span
 							&:first-child
-								border-right 1px solid #ddd
+								border-right 1px solid $line
 								padding-right .1rem
 								margin-right .05rem	
 </style> 
