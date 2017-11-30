@@ -38,7 +38,16 @@
 								<span>1.18km</span>
 								<span>30分钟</span>
 							</div>
+							<div class="kb">
+								<img src="../../../../../static/svg/kb-LOGO.svg" alt="">
+								<span>口碑人气好店</span>
+							</div>
 						</div>
+
+						<!-- <div class="kb">
+							<img src="../../../../../static/svg/kb-LOGO.svg" alt="">
+							<span>口碑人气好店</span>
+						</div> -->
 					</div>
 				</div>
 			</li>
@@ -226,4 +235,5 @@ import ratingStar from './ratingStar'
 								border-right 1px solid $line
 								padding-right .1rem
 								margin-right .05rem	
+
 </style> 
